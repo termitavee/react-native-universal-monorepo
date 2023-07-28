@@ -1,5 +1,5 @@
 {
-  "name": "@my-app/browser-ext",
+  "name": "@template/browser-ext",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,23 +11,10 @@
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
-    "@my-app/app": "*",
-    "@react-native-async-storage/async-storage": "^1.15.7",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-native": "^0.65.1",
-    "react-native-web": "^0.17.1",
-    "react-scripts": "4.0.3",
+    "@template/app": "*",
     "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "@craco/craco": "^6.2.0",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9"
-  },
+  "devDependencies": {},
   "browserslist": {
     "production": [
       "last 1 chrome version",

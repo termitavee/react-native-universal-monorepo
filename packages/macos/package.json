@@ -1,10 +1,10 @@
 {
-  "name": "@my-app/macos",
+  "name": "@template/macos",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "macos": "react-native run-macos",
-    "xcode": "xed macos",
+    "xcode": "open ./macos",
     "start": "react-native start",
     "pods": "pod-install",
     "lint": "eslint .",
@@ -12,21 +12,27 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@my-app/app": "*",
-    "@react-native-async-storage/async-storage": "^1.15.7",
-    "react": "16.13.1",
-    "react-native": "0.63.0",
-    "react-native-macos": "^0.63.0-0"
+    "react-native-macos": "^0.71.0-0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4",
-    "babel-jest": "^25.1.0",
-    "jest": "^25.1.0",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "pod-install": "0.1.27",
-    "react-native-monorepo-tools": "^1.1.0",
-    "react-test-renderer": "16.13.1"
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/runtime": "*",
+    "@react-native-community/eslint-config": "*",
+    "@tsconfig/react-native": "*",
+    "@types/jest": "*",
+    "@types/react": "*",
+    "@types/react-test-renderer": "*",
+    "babel-jest": "*",
+    "eslint": "*",
+    "jest": "*",
+    "metro-react-native-babel-preset": "*",
+    "prettier": "*",
+    "react-test-renderer": "*",
+    "typescript": "*"
   },
   "jest": {
     "preset": "react-native"

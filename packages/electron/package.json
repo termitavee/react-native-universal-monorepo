@@ -1,5 +1,5 @@
 {
-  "name": "@my-app/electron",
+  "name": "@template/electron",
   "version": "0.0.0",
   "private": true,
   "author": "John Doe",
@@ -19,29 +19,10 @@
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
-    "@my-app/app": "*",
-    "@react-native-async-storage/async-storage": "^1.15.7",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-native": "^0.65.1",
-    "react-native-web": "^0.17.1",
+    "@template/app": "*",
     "react-scripts": "4.0.3"
   },
-  "devDependencies": {
-    "@craco/craco": "^6.2.0",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
-    "concurrently": "^6.2.1",
-    "cross-env": "^7.0.3",
-    "electron": "14.0.0",
-    "electron-builder": "^22.11.7",
-    "electronmon": "^2.0.2",
-    "react-native-monorepo-tools": "^1.1.0",
-    "wait-on": "^6.0.0"
-  },
+  "devDependencies": {},
   "browserslist": {
     "production": [
       "last 1 electron version"

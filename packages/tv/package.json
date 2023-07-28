@@ -1,5 +1,5 @@
 {
-  "name": "@my-app/tv",
+  "name": "@template/tv",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,13 +13,14 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@my-app/app": "*",
-    "@react-native-async-storage/async-storage": "^1.15.7",
-    "react": "17.0.1",
+    "@template/app": "*",
     "react-native": "npm:react-native-tvos@0.64.2-2"
   },
-  "devDependencies": {
-    "@types/jest": "^26.0.24",
+  "devDependencies": {},
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.7",
+    "react": "17.0.1",
+    "@types/jest": "*",
     "@types/react-native": "^0.64.2",
     "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^26.6.3",
