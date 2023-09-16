@@ -1,55 +1,67 @@
-# React Native Universal Monorepo
+# React Native Universal monorepo
 
-Monorepo for create an app for all React native possible platforms sharing codebase but different screens
+Using the minimal dependencies to have a fully funciontal monorepo avoiding redundancy
 
 ## Usage
+
+Scripts folder has all necesary functions to init, run, compile and general use script
+
+### Explanation
+
+Boilerplate to use React native sintaxt in all possible platforms. Sorted by framework so for a project some folders can be deleted
 
 Each platform will manage it's own navigation,screens and other stuff will be imported from app.
 
 utils will be used for scripts and other stuff related to the project but no related to production app
 
-## TODO
+### Depenencies
 
-1. Update workspaces dependencies
+- For anything [node](https://nodejs.org/es) is required (better install with [nvm](https://github.com/nvm-sh/nvm))
+- For mobile [React Native](https://reactnative.dev/docs/environment-setup?guide=quickstart) should be configured, by default uses expo go
+- For web and extension no configuration is required, it uses [React Native for web](https://necolas.github.io/react-native-web/) as a compatibility layer to share code with React Native
 
-   [ ] browser extension
+## Planned to do
 
-   [ ] electron
+1. Create and test hello world
 
-   [X] macOS
+   [x] [electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
 
-   [X] mobile (ios android)
+   [ ] [Neutrlino](https://neutralino.js.org/) (desktop) (like tarui but with js and webview)
 
-   [ ] nextJS
+   [ ] [tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
 
-   [ ] tv
+   [ ] [React native](https://reactnative.dev/) (ios and android)
 
-   [ ] web
+   [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
 
-   [ ] windows
+   [ ] [tv React native](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-2. test working hello world
+   [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-   [ ] browser extension
+   [ ] [React Native web](https://necolas.github.io/react-native-web/) (web)
 
-   [ ] electron
+   [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
 
-   [ ] macOS
+   [ ] [Expo web](https://expo.dev/) (web) (Only web oriented, in case mobile has differencies)
 
-   [ ] mobile
+   [ ] Browser extension (web extension) (Also uses React native web)
 
-   [ ] nextJS
+   [ ] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
 
-   [ ] tv
-
-   [ ] web
-
-   [ ] windows
-
-3. configure projects
+2. configure projects
 
    [ ] eslint
 
    [ ] typescript
 
    [ ] prettier
+
+3. Create scripts
+
+   [ ] Init
+
+   [ ] Rename
+
+   [ ] Change version
+
+   [ ] Remove/add workspace
