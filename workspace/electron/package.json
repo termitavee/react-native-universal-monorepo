@@ -1,5 +1,29 @@
 {
   "author": "termitavee",
+  "description": "My fantastic Electron app",
+  "homepage": "./",
+  "main": "./public/electron.js",
+  "name": "@workspace/electron",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "run": "electron .",
+    "start": "react-scripts start",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint:silent": "npm run lint --quiet"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.65.3",
+    "react-native-web": "^0.17.7",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "electron": "14.0.0",
+    "electron-builder": "^22.11.7"
+  },
   "browserslist": {
     "development": [
       "last 1 electron version"
@@ -27,26 +51,5 @@
     "win": {
       "target": "nsis"
     }
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-native": "^0.65.1",
-    "react-native-web": "^0.17.1",
-    "react-scripts": "4.0.3"
-  },
-  "description": "My fantastic Electron app",
-  "devDependencies": {
-    "electron": "14.0.0",
-    "electron-builder": "^22.11.7"
-  },
-  "homepage": "./",
-  "main": "./public/electron.js",
-  "name": "@workspace/electron",
-  "private": true,
-  "scripts": {
-    "run": "electron .",
-    "start": "react-scripts start"
-  },
-  "version": "0.0.0"
+  }
 }

@@ -1,4 +1,21 @@
 {
+  "main": "./entry-point.js",
+  "name": "@workspace/expo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "start": "expo start",
+    "web": "expo start --web",
+    "test": "TZ=UTC jest",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint:silent": "npm run lint --quiet"
+  },
+  "expo": {
+    "entryPoint": "./entry-point.js"
+  },
   "dependencies": {
     "expo": "~49.0.8",
     "expo-splash-screen": "~0.20.5",
@@ -8,18 +25,5 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
-  },
-  "expo": {
-    "entryPoint": "./app.js"
-  },
-  "main": "./entry-point.js",
-  "name": "@workspace/expo",
-  "private": true,
-  "scripts": {
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "start": "expo start",
-    "web": "expo start --web"
-  },
-  "version": "1.0.0"
+  }
 }

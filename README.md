@@ -64,7 +64,7 @@ utils will be used for scripts and other stuff related to the project but no rel
 
   [x] prettier config
 
-  [x] project global config
+  [ ] project global config (added config, require fixes)
 
   [ ] typescript and test linter
 
@@ -79,3 +79,7 @@ utils will be used for scripts and other stuff related to the project but no rel
   [ ] Change version
 
   [ ] Remove/add workspace
+
+## Documentation
+
+- expo guide for monorepos: [docs.expo.dev/guides/monorepos](https://docs.expo.dev/guides/monorepos/)

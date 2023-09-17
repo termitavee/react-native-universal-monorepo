@@ -16,8 +16,7 @@
     "noUnusedParameters": true,
     "paths": {
       "/": ["./"],
-      "src": ["./src"],
-      "test-utils": ["./config/test/test-utils.tsx"]
+      "src": ["./workspace/app"]
     },
     "removeComments": true,
     "resolveJsonModule": true,
@@ -28,5 +27,5 @@
   },
   "exclude": ["node_modules"],
   "extends": "expo/tsconfig.base",
-  "include": ["src", "./app.config.ts", "./App.tsx"]
+  "include": ["workspace", "./app.config.ts", "./declarations.d.ts"]
 }

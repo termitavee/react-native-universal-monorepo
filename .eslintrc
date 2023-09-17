@@ -73,7 +73,7 @@
         "optionalDependencies": false,
         "peerDependencies": false,
         "bundledDependencies": false,
-        "packageDir": "./"
+        "packageDir": ["./"]
       }
     ], // allow imports absolute path
     "import/no-unresolved": "off", // lots of false positives and tipescript manages properly
