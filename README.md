@@ -22,46 +22,60 @@ utils will be used for scripts and other stuff related to the project but no rel
 
 ## Planned to do
 
-1. Create and test hello world
+- Create and test hello world for dummy apps
+  Apps that has the native code but shares the whole App
 
-   [x] [electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
+  [ ] move App to own workspace and current created projects to base/<project>
 
-   [ ] [Neutrlino](https://neutralino.js.org/) (desktop) (like tarui but with js and webview)
+  [x] [electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
 
-   [ ] [tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
+  [ ] [Neutrlino](https://neutralino.js.org/) (desktop) (like tarui but with js and webview)
 
-   [ ] [React native](https://reactnative.dev/) (ios and android)
+  [ ] [tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
 
-   [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
+  [ ] [React native](https://reactnative.dev/) (ios and android)
 
-   [ ] [tv React native](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
+  [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
 
-   [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
+  [ ] [tv React native](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-   [ ] [React Native web](https://necolas.github.io/react-native-web/) (web)
+  [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-   [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
+  [ ] [React Native web](https://necolas.github.io/react-native-web/) (web)
 
-   [ ] [Expo web](https://expo.dev/) (web) (Only web oriented, in case mobile has differencies)
+  [ ] [Expo web](https://expo.dev/) (web) (Only web oriented, in case mobile has differencies)
 
-   [ ] Browser extension (web extension) (Also uses React native web)
+- Create and test hello world for standalone apps
+  Apps that shares only part of the code, created on standalone/<project>
 
-   [ ] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
+  [ ] create workpsace with common parts (screens, components, utils...)
 
-2. configure projects
+  [ ] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
 
-   [ ] eslint
+  [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
 
-   [ ] typescript
+  [ ] Browser extension (web extension) (Also uses React native web)
 
-   [ ] prettier
+  [ ] Backend express?
 
-3. Create scripts
+- configure projects
 
-   [ ] Init
+  [x] eslint config
 
-   [ ] Rename
+  [x] prettier config
 
-   [ ] Change version
+  [x] project global config
 
-   [ ] Remove/add workspace
+  [ ] typescript and test linter
+
+  [ ] Fix npm audit vulnerabilities
+
+- Create scripts
+
+  [ ] Init
+
+  [ ] Rename
+
+  [ ] Change version
+
+  [ ] Remove/add workspace
