@@ -25,60 +25,60 @@ utils will be used for scripts and other stuff related to the project but no rel
 - Create and test hello world for dummy apps
   Apps that has the native code but shares the whole App
 
-  [ ] move App to own workspace and current created projects to base/<project>
+  - [ ] move App to own workspace and current created projects to base/<project>
 
-  [x] [electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
+  - [x] [electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
 
-  [ ] [Neutrlino](https://neutralino.js.org/) (desktop) (like tarui but with js and webview)
+  - [ ] [Neutrlino](https://neutralino.js.org/) (desktop) (like tarui but with js and webview)
 
-  [ ] [tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
+  - [ ] [tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
 
-  [ ] [React native](https://reactnative.dev/) (ios and android)
+  - [ ] [React native](https://reactnative.dev/) (ios and android)
 
-  [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
+  - [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
 
-  [ ] [tv React native](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
+  - [ ] [tv React native](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-  [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
+  - [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
-  [ ] [React Native web](https://necolas.github.io/react-native-web/) (web)
+  - [ ] [React Native web](https://necolas.github.io/react-native-web/) (web)
 
-  [ ] [Expo web](https://expo.dev/) (web) (Only web oriented, in case mobile has differencies)
+  - [ ] [Expo web](https://expo.dev/) (web) (Only web oriented, in case mobile has differencies)
 
 - Create and test hello world for standalone apps
   Apps that shares only part of the code, created on standalone/<project>
 
-  [ ] create workpsace with common parts (screens, components, utils...)
+  - [ ] create workpsace with common parts (screens, components, utils...)
 
-  [ ] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
+  - [ ] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
 
-  [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
+  - [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
 
-  [ ] Browser extension (web extension) (Also uses React native web)
+  - [ ] Browser extension (web extension) (Also uses React native web)
 
-  [ ] Backend express?
+  - [ ] Backend express?
 
 - configure projects
 
-  [x] eslint config
+  - [x] eslint config
 
-  [x] prettier config
+  - [x] prettier config
 
-  [ ] project global config (added config, require fixes)
+  - [ ] project global config (added config, require fixes)
 
-  [ ] typescript and test linter
+  - [ ] typescript and test linter
 
-  [ ] Fix npm audit vulnerabilities
+  - [ ] Fix npm audit vulnerabilities
 
 - Create scripts
 
-  [ ] Init
+  - [ ] Init
 
-  [ ] Rename
+  - [ ] Rename
 
-  [ ] Change version
+  - [ ] Change version
 
-  [ ] Remove/add workspace
+  - [ ] Remove/add workspace
 
 ## Documentation
 
