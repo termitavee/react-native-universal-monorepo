@@ -1,0 +1,22 @@
+{
+  "name": "@common/app",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src",
+  "scripts": {
+    "lint:fix": "yarn lint --fix",
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn jest --watch",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint:silent": "npm run lint --quiet"
+  },
+  "devDependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.7"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "typescript": "*"
+  }
+}

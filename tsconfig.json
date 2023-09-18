@@ -16,7 +16,10 @@
     "noUnusedParameters": true,
     "paths": {
       "/": ["./"],
-      "src": ["./workspace/app"]
+      "@common/app": ["./common/app"],
+      "@common/src": ["./common/src"],
+      "@standalone": ["./standalone"],
+      "@unified": ["./unified"]
     },
     "removeComments": true,
     "resolveJsonModule": true,

@@ -25,21 +25,21 @@ utils will be used for scripts and other stuff related to the project but no rel
 - Create and test hello world for dummy apps
   Apps that has the native code but shares the whole App
 
-  - [ ] move App to own workspace and current created projects to base/<project>
+  - [x] Move App to own workspace and current created projects to app/
 
-  - [x] [electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
+  - [x] [Electron](https://electronjs.org/) (desktop) (like electron but with rust and webview)
+
+  - [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
 
   - [ ] [Neutrlino](https://neutralino.js.org/) (desktop) (like tarui but with js and webview)
 
   - [ ] [tarui](https://tauri.app/) (desktop) (like electron but with rust and webview)
 
+  - [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
+
   - [ ] [React native](https://reactnative.dev/) (ios and android)
 
-  - [x] [Expo](https://expo.dev/) (ios, android, web) (web can be ignored)
-
   - [ ] [tv React native](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
-
-  - [ ] [tv Expo](https://github.com/react-native-tvos/react-native-tvos) (Apple TV, Android TV)
 
   - [ ] [React Native web](https://necolas.github.io/react-native-web/) (web)
 
@@ -48,25 +48,29 @@ utils will be used for scripts and other stuff related to the project but no rel
 - Create and test hello world for standalone apps
   Apps that shares only part of the code, created on standalone/<project>
 
-  - [ ] create workpsace with common parts (screens, components, utils...)
+  - [x] Create workpsace with common parts (screens, components, utils...)
 
-  - [ ] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
-
-  - [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
+  - [x] [ink](https://github.com/vadimdemedes/ink) (terminal) (Uses React sintaxt)
 
   - [ ] Browser extension (web extension) (Also uses React native web)
 
   - [ ] Backend express?
 
+  - [ ] [nextjs](https://nextjs.org/) (web) (Also uses React native web)
+
 - configure projects
 
-  - [x] eslint config
+  - [x] Eslint config
 
-  - [x] prettier config
+  - [x] Prettier config
 
-  - [ ] project global config (added config, require fixes)
+  - [ ] Project global config (added config, require fixes)
 
-  - [ ] typescript and test linter
+  - [ ] Typescript and test linter
+
+  - [ ] Configure npm scripts
+
+  - [ ] review dependencies and use actual version in step of wildcard
 
   - [ ] Fix npm audit vulnerabilities
 
@@ -83,3 +87,5 @@ utils will be used for scripts and other stuff related to the project but no rel
 ## Documentation
 
 - expo guide for monorepos: [docs.expo.dev/guides/monorepos](https://docs.expo.dev/guides/monorepos/)
+
+- [original idea](https://github.com/mmazzarolo/react-native-universal-monorepo)

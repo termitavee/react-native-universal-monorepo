@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "scripts": {
     "test": "npm run test --workspaces --if-present",
-    "start:expo": "npm run start -w @workspace/expo",
-    "start:electron": "npm run start -w @workspace/electron",
+    "start:expo": "npm run start -w @unified/expo",
+    "start:expo:android": "npm run start:android -w @unified/expo",
+    "start:expo:ios": "npm run start:ios -w @unified/expo",
+    "start:expo:web": "npm run start:web -w @unified/expo",
+    "start:electron": "npm run start -w @unified/electron",
+    "start:ink": "npm run start -w @standalone/ink",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
     "lint:silent": "npm run lint:silent --workspaces --if-present"
@@ -23,13 +27,15 @@
   },
   "homepage": "https://github.com/termitavee/react-native-universal-monorepo#readme",
   "workspaces": [
-    "workspace/*"
+    "app",
+    "src",
+    "standalone/*",
+    "unified/*"
   ],
-  "dependencies": {
-    "ink": "^4.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "@types/react-native": "^0.72.2",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
@@ -42,6 +48,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "ink": "^4.4.1",
     "typescript": "^4.2.0"
   }
 }
