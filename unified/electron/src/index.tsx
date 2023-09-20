@@ -1,4 +1,4 @@
-import { App } from '@workspace/app/src/App';
+import { App } from '@common/app/src/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 

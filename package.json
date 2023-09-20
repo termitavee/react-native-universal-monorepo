@@ -8,6 +8,7 @@
     "start:expo:ios": "npm run start:ios -w @unified/expo",
     "start:expo:web": "npm run start:web -w @unified/expo",
     "start:electron": "npm run start -w @unified/electron",
+    "run:electron": "npm run run -w @unified/electron",
     "start:ink": "npm run start -w @standalone/ink",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",

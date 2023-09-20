@@ -3,26 +3,39 @@
   "description": "My fantastic Electron app",
   "homepage": "./",
   "main": "./public/electron.js",
-  "name": "@workspace/electron",
+  "name": "@unified/electron",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "run": "electron .",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "eject": "react-scripts eject",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint:silent": "npm run lint --quiet"
   },
   "dependencies": {
-    "react": "^17.0.2",
+    "react": "*",
     "react-dom": "^17.0.2",
-    "react-native": "^0.65.3",
+    "react-native": "*",
     "react-native-web": "^0.17.7",
     "react-scripts": "^4.0.3"
   },
   "devDependencies": {
+    "typescript": "*",
     "electron": "14.0.0",
     "electron-builder": "^22.11.7"
+  },
+  "peerDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^27.4.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
   },
   "browserslist": {
     "development": [

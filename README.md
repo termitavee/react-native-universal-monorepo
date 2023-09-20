@@ -20,6 +20,12 @@ utils will be used for scripts and other stuff related to the project but no rel
 - For mobile [React Native](https://reactnative.dev/docs/environment-setup?guide=quickstart) should be configured, by default uses expo go
 - For web and extension no configuration is required, it uses [React Native for web](https://necolas.github.io/react-native-web/) as a compatibility layer to share code with React Native
 
+### npm dependencies
+
+- Normaly most of devDependencies will be in the roo package json
+- standalone and unified dependencies will work as in a normal project, each one will have it's own dependenceis values
+- commmon is using wild card to ensure compatibility, in the future could use values to ensure the updates of all workspaces
+
 ## Planned to do
 
 - Create and test hello world for dummy apps
