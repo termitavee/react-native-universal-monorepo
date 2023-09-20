@@ -10,7 +10,7 @@
     "web": "expo start --web",
     "test": "TZ=UTC jest",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint": "TIMING=1 eslint \"/**/*.{ts,tsx}\" -c ./.eslintrc",
     "lint:silent": "npm run lint --quiet"
   },
   "expo": {
