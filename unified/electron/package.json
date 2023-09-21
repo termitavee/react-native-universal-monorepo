@@ -11,7 +11,7 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "eject": "react-scripts eject",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "lint": "TIMING=1 eslint  \"src/**/*.{ts,tsx}\" -c ./.eslintrc",
+    "lint": "TIMING=1 eslint \"./{src,public}/**/*.{ts,tsx}\" -c ./.eslintrc",
     "lint:silent": "npm run lint --quiet"
   },
   "dependencies": {

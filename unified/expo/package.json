@@ -1,6 +1,5 @@
 {
-  "main": "./entry-point.js",
-  "name": "@workspace/expo",
+  "name": "@unified/expo",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,16 +9,17 @@
     "web": "expo start --web",
     "test": "TZ=UTC jest",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "lint": "TIMING=1 eslint \"/**/*.{ts,tsx}\" -c ./.eslintrc",
+    "lint": "TIMING=1 eslint \"./src/**/*.{ts,tsx}\" -c ./.eslintrc",
     "lint:silent": "npm run lint --quiet"
   },
-  "expo": {
-    "entryPoint": "./entry-point.js"
-  },
+  "main": "src/entry-point.ts",
   "dependencies": {
+    "@expo/webpack-config": "^19.0.0",
     "expo": "~49.0.8",
     "expo-splash-screen": "~0.20.5",
-    "expo-status-bar": "~1.6.0"
+    "expo-status-bar": "~1.6.0",
+    "react-dom": "^18.2.0",
+    "react-native-web": "^0.19.9"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

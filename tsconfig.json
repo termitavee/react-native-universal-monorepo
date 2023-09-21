@@ -2,20 +2,20 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "jsx": "react-native",
-    "lib": ["dom", "es7"],
+    "lib": ["esnext"],
     "module": "es2015",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "/": ["./"],
+      "*": ["node_modules/*"],
       "@common/app": ["./common/app"],
       "@common/src": ["./common/src"],
       "@standalone": ["./standalone"],
@@ -30,5 +30,6 @@
   },
   "exclude": ["node_modules"],
   "extends": "expo/tsconfig.base",
-  "include": ["workspace", "./app.config.ts", "./declarations.d.ts"]
+  // "references": [{ "path": "common/app" }, { "path": "common/src" }],
+  "include": ["./unified/", "./standalone/", "./common/"]
 }

@@ -19,9 +19,7 @@
     "prettier"
   ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
+    "ecmaFeatures": { "jsx": true },
     "ecmaVersion": 2023,
     "project": "./tsconfig.json",
     "sourceType": "module"
@@ -36,18 +34,11 @@
   "rules": {
     "@typescript-eslint/naming-convention": [
       "error",
-      {
-        "format": ["PascalCase"],
-        "selector": ["interface", "typeLike"]
-      }
+      { "format": ["PascalCase"], "selector": ["interface", "typeLike"] }
     ],
     "@typescript-eslint/no-misused-promises": [
       "warn",
-      {
-        "checksConditionals": true,
-        "checksSpreads": true,
-        "checksVoidReturn": false
-      }
+      { "checksConditionals": true, "checksSpreads": true, "checksVoidReturn": false }
     ],
     "@typescript-eslint/no-shadow": "error", // bug with typescript
     "@typescript-eslint/restrict-template-expressions": [
@@ -100,17 +91,9 @@
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react/function-component-definition": [
       1,
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
+      { "namedComponents": "arrow-function", "unnamedComponents": "arrow-function" }
     ],
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".tsx"]
-      }
-    ], // use react components only in tsx files, no jsx or ts
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // use react components only in tsx files, no jsx or ts
     "react/jsx-props-no-spreading": "off", // typescript checks values
     "react/prop-types": "off", // Since we do not use prop-types
     "react/require-default-props": "off", // Since we do not use prop-types
