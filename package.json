@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/termitavee/react-native-universal-monorepo#readme",
   "workspaces": [
-    "app",
-    "src",
+    "common/app/*",
+    "common/src/*",
     "standalone/*",
     "unified/*"
   ],

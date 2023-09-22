@@ -1,8 +1,17 @@
 {
   "extends": ["../../.eslintrc"],
+  "globals": {
+    "window": true,
+    "document": true
+  },
   "rules": {
+    // TODO problems with global variables like window and document
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
     "import/no-extraneous-dependencies": [
-      "error",
+      "off",
       {
         "devDependencies": ["**/*.test.ts", "**/*.test.tsx", "config/test/test-utils.tsx"],
         "optionalDependencies": false,

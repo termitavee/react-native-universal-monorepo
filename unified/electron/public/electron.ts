@@ -1,23 +1,24 @@
-const { app, BrowserWindow } = require("electron");
-const path = require("path");
-const url = require("url");
+const path = require('path');
+const url = require('url');
+
+const { app, BrowserWindow } = require('electron');
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, 'preload.js'),
     },
   });
 
   const appURL = app.isPackaged
     ? url.format({
-        pathname: path.join(__dirname, "index.html"),
-        protocol: "file:",
+        pathname: path.join(__dirname, 'index.html'),
+        protocol: 'file:',
         slashes: true,
       })
-    : "http://localhost:3000";
+    : 'http://localhost:19006';
 
   mainWindow.loadURL(appURL);
 
@@ -34,7 +35,7 @@ app.whenReady().then(() => {
   createWindow();
   setupLocalFilesNormalizerProxy();
 
-  app.on("activate", function () {
+  app.on('activate', () => {
     // On macOS it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) {
@@ -46,8 +47,8 @@ app.whenReady().then(() => {
 // Quit when all windows are closed, except on macOS.
 // There, it's common for applications and their menu bar to stay active until
 // the user quits  explicitly with Cmd + Q.
-app.on("window-all-closed", function () {
-  if (process.platform !== "darwin") {
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
     app.quit();
   }
 });

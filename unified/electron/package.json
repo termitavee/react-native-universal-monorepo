@@ -7,24 +7,23 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "run": "electron .",
+    "electron": "electron ./public/electron.ts",
     "start": "react-scripts --openssl-legacy-provider start",
     "eject": "react-scripts eject",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "lint": "TIMING=1 eslint \"./{src,public}/**/*.{ts,tsx}\" -c ./.eslintrc",
+    "lint": "TIMING=1 eslint \"./{src,public}/**/*.{ts,tsx,js,jsx}\" -c ./.eslintrc",
     "lint:silent": "npm run lint --quiet"
   },
   "dependencies": {
-    "react": "*",
-    "react-dom": "^17.0.2",
-    "react-native": "*",
-    "react-native-web": "^0.17.7",
-    "react-scripts": "^4.0.3"
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native-web": "^0.19.9",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "typescript": "*",
-    "electron": "14.0.0",
-    "electron-builder": "^22.11.7"
+    "electron": "26.2.2",
+    "electron-builder": "^24.6.4",
+    "typescript": "5.2.2"
   },
   "peerDependencies": {
     "eslint": "^8.49.0",

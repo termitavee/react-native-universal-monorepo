@@ -1,4 +1,4 @@
-import App from '@common/app/App';
+import App from '@common/app';
 import { registerRootComponent } from 'expo';
 
 registerRootComponent(App);

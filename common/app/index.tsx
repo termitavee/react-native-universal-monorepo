@@ -1,6 +1,6 @@
+import { subplatform } from '@common/src/utils/device';
 import { Image, Platform, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
-import { subplatform } from '@common/src/utils/device';
 import LogoSrc from './logo.png';
 
 const styles = StyleSheet.create({
