@@ -9,6 +9,7 @@
   "scripts": {
     "run": "electron .",
     "start": "react-scripts start",
+    "eject": "react-scripts eject",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint:silent": "npm run lint --quiet"

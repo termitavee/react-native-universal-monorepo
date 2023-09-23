@@ -16,14 +16,14 @@
     "noUnusedParameters": true,
     "paths": {
       "/": ["./"],
-      "src": ["./workspace/app"]
+      "@workspace/app": ["./workspace/app"]
     },
     "removeComments": true,
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
     "skipLibCheck": true,
-    "target": "ES2018"
+    "target": "ES6",
   },
   "exclude": ["node_modules"],
   "extends": "expo/tsconfig.base",
