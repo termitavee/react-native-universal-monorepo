@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "dev.termitavee.mobile"
@@ -24,9 +22,6 @@
         "backgroundColor": "#ffffff"
       },
       "package": "dev.termitavee.mobile"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     }
   }
 }
