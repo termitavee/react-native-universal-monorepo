@@ -8,13 +8,13 @@
   "private": true,
   "scripts": {
     "run": "electron .",
-    "start": "react-scripts start",
-    "eject": "react-scripts eject",
+    "start": "craco start",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "lint:silent": "npm run lint --quiet"
   },
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "^0.72.4",
@@ -25,7 +25,8 @@
     "@expo/webpack-config": "^19.0.0",
     "electron": "26.2.2",
     "electron-builder": "^24.6.4",
-    "eslint-plugin-jest": "^27.4.0"
+    "eslint-plugin-jest": "^27.4.0",
+    "webpack": "^5.88.2"
   },
   "browserslist": {
     "development": [

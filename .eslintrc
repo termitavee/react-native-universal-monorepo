@@ -107,9 +107,7 @@
     ],
     "react/jsx-filename-extension": [
       1,
-      {
-        "extensions": [".tsx"]
-      }
+      {   "extensions": [".tsx"] }
     ], // use react components only in tsx files, no jsx or ts
     "react/jsx-props-no-spreading": "off", // typescript checks values
     "react/prop-types": "off", // Since we do not use prop-types

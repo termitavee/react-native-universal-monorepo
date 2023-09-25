@@ -4,6 +4,7 @@
   "scripts": {
     "test": "npm run test --workspaces --if-present",
     "start:expo": "npm run start -w @workspace/expo",
+    "watch:web": "npm run build-watch -w @workspace/app",
     "start:electron": "npm run start -w @workspace/electron",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
@@ -29,6 +30,8 @@
     "ink": "^4.4.1"
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@craco/types": "^7.1.0",
     "@types/react": "^18.2.21",
     "@types/react-native": "^0.72.2",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
