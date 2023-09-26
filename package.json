@@ -4,7 +4,7 @@
   "scripts": {
     "test": "npm run test --workspaces --if-present",
     "start:expo": "npm run start -w @workspace/expo",
-    "watch:web": "npm run build-watch -w @workspace/app",
+    "run:electron": "npm run run:electron -w @workspace/electron",
     "start:electron": "npm run start -w @workspace/electron",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
