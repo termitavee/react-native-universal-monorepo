@@ -33,6 +33,7 @@
     "NodeJS": "readonly",
     "SharedArrayBuffer": "readonly"
   },
+  "ignorePatterns": ["package.json", "node_modules", "workspace"],
   "rules": {
     "@typescript-eslint/naming-convention": [
       "error",
@@ -73,7 +74,7 @@
         "optionalDependencies": false,
         "peerDependencies": false,
         "bundledDependencies": false,
-        "packageDir": ["./"]
+        "packageDir": ["./scripts"]
       }
     ], // allow imports absolute path
     "import/no-unresolved": "off", // lots of false positives and tipescript manages properly
@@ -105,10 +106,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "react/jsx-filename-extension": [
-      1,
-      {   "extensions": [".tsx"] }
-    ], // use react components only in tsx files, no jsx or ts
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // use react components only in tsx files, no jsx or ts
     "react/jsx-props-no-spreading": "off", // typescript checks values
     "react/prop-types": "off", // Since we do not use prop-types
     "react/require-default-props": "off", // Since we do not use prop-types

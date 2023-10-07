@@ -7,8 +7,10 @@
     "run:electron": "npm run run:electron -w @workspace/electron",
     "start:electron": "npm run start -w @workspace/electron",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present",
-    "lint:silent": "npm run lint:silent --workspaces --if-present"
+    "lint:all": "npm run lint --workspaces --if-present",
+    "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
+    "lint:expo": "npm run lint -w @workspace/expo",
+    "lint:silent": "eslint --workspaces --if-present"
   },
   "description": "boilerplate monorepo that uses react native to build all possible platforms",
   "main": "index.js",

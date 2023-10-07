@@ -1,6 +1,6 @@
 import { Image, Platform, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
-import { subplatform } from './config';
+import { getSubPlatform } from './config';
 import LogoSrc from './logo.png';
 
 const styles = StyleSheet.create({
@@ -38,11 +38,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export const App = (): JSX.Element => {
-  const platformValue = subplatform ? `${Platform.OS} (${subplatform})` : Platform.OS;
+const App = (): JSX.Element => {
+  const platformValue = getSubPlatform() ? `${Platform.OS} (${getSubPlatform()})` : Platform.OS;
   return (
     <SafeAreaView style={styles.root}>
-      <Image style={styles.logo} source={typeof LogoSrc === 'string' ? { uri: LogoSrc } : LogoSrc} />
+      {/* <Image style={styles.logo} source={typeof LogoSrc === 'string' ? { uri: LogoSrc } : LogoSrc} /> */}
+      <Image style={styles.logo} source={LogoSrc} />
       <Text style={styles.text}>Hello from React Native!</Text>
       <View style={styles.platformRow}>
         <Text style={styles.text}>Platform: </Text>

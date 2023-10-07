@@ -1,4 +1,8 @@
 {
+  "name": "@workspace/expo",
+  "main": "./src/entry-point.ts",
+  "private": false,
+  "version": "1.0.0",
   "dependencies": {
     "expo": "~49.0.11",
     "expo-splash-screen": "~0.20.5",
@@ -12,20 +16,16 @@
     "@types/react": "~18.2.14"
   },
   "expo": {
-    "entryPoint": "./entry-point.js"
+    "entryPoint": "./src/entry-point.ts"
   },
-  "main": "./entry-point.js",
-  "name": "@workspace/expo",
-  "private": true,
   "scripts": {
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
     "lint:silent": "npm run lint --quiet",
     "start": "expo start",
     "test": "TZ=UTC jest",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "web": "expo start --web"
-  },
-  "version": "1.0.0"
+    "web": "expo run:web"
+  }
 }

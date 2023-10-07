@@ -4,6 +4,7 @@
     "expo.vscode-expo-tools",
     "davidanson.vscode-markdownlint",
     "msjsdiag.vscode-react-native",
-    "gruntfuggly.todo-tree"
+    "gruntfuggly.todo-tree",
+    "esbenp.prettier-vscode"
   ]
 }

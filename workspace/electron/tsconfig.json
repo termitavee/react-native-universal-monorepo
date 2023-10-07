@@ -1,8 +1,7 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["**/*.ts", "**/*.tsx", "../app/**/*.tsx", "../app/**/*.ts"],
   "compilerOptions": {
-    "lib": ["dom", "ESNext"]
+    "rootDir": "../../"
   },
-  "exclude": ["node_modules"]
+  "include": ["./src"]
 }

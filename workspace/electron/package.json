@@ -49,7 +49,7 @@
   "name": "@workspace/electron",
   "private": true,
   "scripts": {
-    "lint": "TIMING=1 eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint": "TIMING=1 eslint \"src/**/*.{tsx|ts}\"",
     "lint:silent": "npm run lint --quiet",
     "run:electron": "electron .",
     "start": "craco start",

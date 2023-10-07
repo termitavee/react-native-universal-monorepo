@@ -1,20 +1,13 @@
 {
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true
     //    "source.fixAll": true
   },
   "editor.cursorSurroundingLines": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Fira Code', Hack, 'MesloLGS NF', monospace",
   "editor.fontLigatures": true,
